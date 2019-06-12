@@ -32,7 +32,9 @@ internal class FrameView: UIVisualEffectView {
         layer.masksToBounds = true
 
         contentView.addSubview(content)
-
+        
+        // MARK: - Core Motionに問題がありiPhoneX系統でBackgroundThreadでUIKit APIが呼ばれる問題があるので、Motion周りの機能を削除 - 
+        /*
         let offset = 20.0
 
         let motionEffectsX = UIInterpolatingMotionEffect(keyPath: "center.x", type: .tiltAlongHorizontalAxis)
@@ -47,6 +49,7 @@ internal class FrameView: UIVisualEffectView {
         group.motionEffects = [motionEffectsX, motionEffectsY]
 
         addMotionEffect(group)
+         */
     }
 
     private var _content = UIView()
