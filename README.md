@@ -3,6 +3,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/PKHUD.svg?style=flat)](http://cocoadocs.org/docsets/PKHUD/3.2.1/) 
 [![CocoaPod](https://img.shields.io/cocoapods/v/PKHUD.svg?style=flat)](https://cocoapods.org/pods/PKHUD)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
 
 ![PKHUD - Swift and easy](https://raw.githubusercontent.com/pkluz/PKHUD/master/README_hero.png)
 
@@ -60,6 +61,30 @@ github "pkluz/PKHUD" ~> 4.0
 ```
 
 Run `carthage update` to build the framework and drag the built `PKHUD.framework` into your Xcode project.
+
+### SwiftPackageManager
+
+[Swift Package Manager](https://github.com/apple/swift-package-manager) Swift Package Manager is a The Package Manager for the Swift Programming Language
+
+Create a `Package.swift` file.
+
+```swift
+// swift-tools-version:5.0
+
+import PackageDescription
+
+let package = Package(
+  name: "RxTestProject",
+  dependencies: [
+    .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "5.0.0")
+  ],
+  targets: [
+    .target(name: "RxTestProject", dependencies: ["RxSwift", "RxCocoa"])
+  ]
+)
+```
+
+
 
 ## How To
 
