@@ -74,13 +74,13 @@ Create a `Package.swift` file.
 import PackageDescription
 
 let package = Package(
-  name: "RxTestProject",
-  dependencies: [
-    .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "5.0.0")
-  ],
-  targets: [
-    .target(name: "RxTestProject", dependencies: ["RxSwift", "RxCocoa"])
-  ]
+    name: "PKHUD",
+    dependencies: [
+      .package(url: "https://github.com/tomoki69386/PKHUD", from: "5.5.1")
+    ],
+    targets: [
+        .target(name: "PKHUD", dependencies: ["PKHUD"])
+    ]
 )
 ```
 
