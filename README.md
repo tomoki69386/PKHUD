@@ -64,7 +64,7 @@ Run `carthage update` to build the framework and drag the built `PKHUD.framework
 
 ### SwiftPackageManager
 
-[Swift Package Manager](https://github.com/apple/swift-package-manager) Swift Package Manager is a The Package Manager for the Swift Programming Language
+[Swift Package Manager](https://github.com/apple/swift-package-manager) is a The Package Manager for the Swift Programming Language
 
 Create a `Package.swift` file.
 
